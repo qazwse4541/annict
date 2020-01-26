@@ -11,6 +11,7 @@ module ActionDispatch
 end
 
 Rails.application.routes.draw do
+  use_doorkeeper_openid_connect
   draw :api
   draw :chat
   draw :db
